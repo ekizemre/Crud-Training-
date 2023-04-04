@@ -1,0 +1,16 @@
+﻿@model Crud.Models.Söförler
+@{
+    ViewData["Title"] = "Söför_Guncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Şöför Güncelleme</h1>
+
+
+<form> asp-action="Söför_Guncelle" method="post">
+    <input type="hidden" asp-for="@Model.SöförID" />
+    <input class="form control mb-2" asp-for="@Model.Söförad"/>
+    <button class="btn btn-info" type="submit">Söför Güncelle</button>
+
+</form>
+
